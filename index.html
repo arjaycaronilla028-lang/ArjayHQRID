@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HEALTH ID CARD</title>
+  <title>Health ID Card</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #eaeaea;
       padding: 20px;
     }
+
     .card {
       background-color: #ffffff;
-      padding: 15px;
-      border-radius: 8px;
-      max-width: 400px;
+      max-width: 380px;
       margin: auto;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
     .photo {
       text-align: center;
       margin-bottom: 15px;
     }
+
     .photo img {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
+      border: 2px solid #ddd;
     }
-    h2 {
-      text-align: center;
-    }
+
     .info {
-      margin-bottom: 10px;
+      font-size: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
     }
+
     .label {
       font-weight: bold;
+      color: #333;
+    }
+
+    .section {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+      font-weight: bold;
+      text-transform: uppercase;
     }
   </style>
 </head>
 
 <body>
+
   <div class="card">
     <h2>Health Identification</h2>
 
@@ -47,21 +70,27 @@
       <img src="arjay.png" alt="Person Photo">
     </div>
 
+    <div class="section">Personal Information</div>
     <div class="info"><span class="label">Full Name:</span> Arjay Caronilla</div>
     <div class="info"><span class="label">Age / Date of Birth:</span> 17 / September 15, 2008</div>
+    <div class="info"><span class="label">Sex:</span> Male</div>
     <div class="info"><span class="label">Blood Type:</span> N/A</div>
+
+    <div class="section">Medical Information</div>
     <div class="info"><span class="label">Allergies:</span> None</div>
     <div class="info"><span class="label">Medical Conditions:</span> None</div>
     <div class="info"><span class="label">Required Medication:</span> None</div>
-    <div class="info"><span class="label">Emergency Contact:</span> Ruby Ann Caronilla, Mother, +639350658982</div>
+    <div class="info"><span class="label">Disabilities / Special Needs:</span> None</div>
+
+    <div class="section">Emergency Contact</div>
+    <div class="info"><span class="label">Contact Person:</span> Ruby Ann Caronilla</div>
+    <div class="info"><span class="label">Relationship:</span> Mother</div>
+    <div class="info"><span class="label">Phone Number:</span> +639350658982</div>
+
+    <div class="section">Other</div>
     <div class="info"><span class="label">Language Spoken:</span> Filipino, English</div>
-    <div class="info"><span class="label">Disabilities or Special Needs:</span> None</div>
-    <div class="info"><span class="label">Sex:</span> male</div>
-    <div class="info"><sapn class="label"></sapn></div>
 
   </div>
+
 </body>
 </html>
-
-
-
